@@ -6,7 +6,7 @@ const Header = ({ era }) => {
 
     return (
         <>
-            <h1 className='bg-indigo-600'>Este es el nombre: {nombre}</h1>
+            <h1>Este es el nombre: {nombre}</h1>
             <p>Esta es mi descripcion: {descripcion}</p>
         </>
     )
