@@ -12,7 +12,7 @@ const Header = () => {
                     <nav className="relative z-50 flex justify-between">
                         <div className="flex items-center md:gap-x-12">
                             <a aria-label="Home" href="#">
-                                <img className="h-16 w-auto" src="src/assets/img/logo.jpg" alt="" />
+                                <img className="h-16 w-auto" src="/logo.jpg" alt="" />
                             </a>
                             <div className="hidden md:flex md:gap-x-6">
                                 <a className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">Inicio</a>
