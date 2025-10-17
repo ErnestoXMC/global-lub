@@ -8,7 +8,7 @@ const Footer = () => {
 
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <img className="h-12 w-auto" src="public/logo.jpg" alt="Logo Empresa" />
+              <img className="h-12 w-auto" src="/logo.jpg" alt="Logo Empresa" />
               <h3 className="ml-3 text-xl font-bold">Global Lub</h3>
             </div>
             <p className="text-slate-300 mb-4 max-w-md">
