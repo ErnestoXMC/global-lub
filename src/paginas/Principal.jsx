@@ -3,6 +3,7 @@ import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import Header from "../components/Header";
 import Productos from "../components/Productos";
 import Footer from "../components/Footer";
+import Servicios from "../components/Servicios";
 
 
 const Principal = () => {
@@ -15,14 +16,15 @@ const Principal = () => {
 
   return (
     <>
-      <Header 
+      <Header
         era={era}
       />
       <Productos />
-
+      
+      <Servicios />
       <Footer />
     </>
-    
+
   )
 }
 
