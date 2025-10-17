@@ -2,6 +2,7 @@ import { Link, Navigate } from "react-router-dom"
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import Header from "../components/Header";
 import Productos from "../components/Productos";
+import Footer from "../components/Footer";
 
 
 const Principal = () => {
@@ -18,6 +19,8 @@ const Principal = () => {
         era={era}
       />
       <Productos />
+
+      <Footer />
     </>
     
   )
