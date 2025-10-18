@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Productos from "../components/Productos";
 import Footer from "../components/Footer";
 import Servicios from "../components/Servicios";
+import Nosotros from "../components/Nosotros";
+import Contacto from "../components/Contacto";
 
 
 const Principal = () => {
@@ -19,8 +21,9 @@ const Principal = () => {
       <Header
         era={era}
       />
+      <Nosotros />
       <Productos />
-      
+      <Contacto />
       <Servicios />
       <Footer />
     </>
