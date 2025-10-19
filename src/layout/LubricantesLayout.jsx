@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import WhatsAppIcon from "../components/WhatsappIcon"
+import WhatsAppFloat from "../components/WhatsAppFloat"
 
 const LubricantesLayout = () => {
     return (
@@ -7,7 +7,7 @@ const LubricantesLayout = () => {
             <main>
                 <Outlet />
             </main>
-            <WhatsAppIcon />
+            <WhatsAppFloat />
         </>
     )
 }

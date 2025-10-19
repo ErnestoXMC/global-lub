@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WhatsAppIcon = () => {
+const WhatsAppFloat = () => {
   return (
     <a 
       href="https://wa.me/51979947680?text=Hola quiero más información de su negocio" 
@@ -18,4 +18,4 @@ const WhatsAppIcon = () => {
   )
 }
 
-export default WhatsAppIcon
+export default WhatsAppFloat
