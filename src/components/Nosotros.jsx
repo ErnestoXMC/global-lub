@@ -8,7 +8,7 @@ const Nosotros = () => {
           <div className='w-full md:w-1/2 flex justify-center'>
             <div className='relative w-[70%] md:w-3/4'>
               <img 
-                src="public/nosotros.webp" 
+                src="/nosotros.webp" 
                 alt="Lubricantes y maquinaria" 
                 className='w-full h-auto shadow-xl rounded-lg'
               />
