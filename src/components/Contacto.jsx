@@ -149,7 +149,7 @@ const Contacto = () => {
               style={{ display: "none" }}
             />
 
-            <form id="contactForm" action="https://formsubmit.co/era.dev.tech@gmail.com" method="POST" className="space-y-6">
+            <form id="contactForm" action="https://formsubmit.co/4dffcdbde0cf37a401b689de21547795" method="POST" className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-white">Nombre</label>
                 <input name="name" type="text" required className="w-full mt-1 p-3 rounded-lg bg-white text-gray-900" />
