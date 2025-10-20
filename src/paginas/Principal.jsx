@@ -23,8 +23,8 @@ const Principal = () => {
       />
       <Nosotros />
       <Productos />
-      <Contacto />
       <Servicios />
+      <Contacto />
       <Footer />
     </>
 
