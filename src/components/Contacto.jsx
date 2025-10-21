@@ -125,7 +125,7 @@ const Contacto = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-20">
+    <section className="py-[4.8rem] md:py-[9.6rem]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="bg-white w-full flex flex-col lg:flex-row overflow-hidden">
           <div className="w-full lg:w-1/2 p-10 flex flex-col justify-center">

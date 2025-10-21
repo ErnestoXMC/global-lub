@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nosotros = () => {
   return (
-    <section className='py-12 md:py-20 bg-white'>
+    <section className='py-[4.8rem] md:py-[9.6rem] bg-white'>
       <div className='max-w-7xl mx-auto px-6 md:px-12'>
         <div className='flex flex-col md:flex-row gap-12 md:gap-16 items-center'>
           <div className='w-full md:w-1/2 flex justify-center'>
