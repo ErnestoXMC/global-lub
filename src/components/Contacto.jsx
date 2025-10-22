@@ -72,7 +72,7 @@ const Contacto = () => {
           </div>
         `;
         // Cambiar estilo del botón
-        submitButton.className = "w-full bg-gray-400 text-gray-600 py-3 rounded-lg cursor-not-allowed transition-all duration-200";
+        submitButton.className = "w-full bg-gray-400 text-gray-600 py-4 rounded-lg cursor-not-allowed font-semibold text-lg transition-all duration-200 shadow-lg flex items-center justify-center space-x-2";
 
         // Mostrar mensaje de carga
         status.innerHTML = "📤 Enviando mensaje...";
@@ -107,8 +107,8 @@ const Contacto = () => {
 
       setTimeout(() => {
         submitButton.disabled = false;
-        submitButton.innerHTML = "Enviar Mensaje";
-        submitButton.className = "w-full bg-[rgba(242,244,48)] hover:bg-yellow-400 text-gray-900 py-3 rounded-lg transition-all duration-200";
+        submitButton.innerHTML = '<span>Enviar</span><span class="text-xl">→</span>';
+        submitButton.className = "w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2";
       }, 2000);
     };
 
@@ -125,61 +125,124 @@ const Contacto = () => {
   }, []);
 
   return (
-    <section className="py-[4.8rem] md:py-[9.6rem]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="bg-white w-full flex flex-col lg:flex-row overflow-hidden">
-          <div className="w-full lg:w-1/2 p-10 flex flex-col justify-center">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[rgba(128,128,128,1)] mb-4">Contáctanos</h3>
-            <p className="text-gray-600 mb-6 max-w-md">¿Necesitas asesoría en lubricantes? Completa el formulario de consulta del proyecto.</p>
-            <div className="space-y-3 text-gray-700">
-              <div className="flex items-center space-x-3"><span>Av. Industrial 123, Lima, Perú 15001</span></div>
-              <div className="flex items-center space-x-3"><span>ventas@globallub.com</span></div>
-              <div className="flex items-center space-x-3"><span>979-947-680</span></div>
+    <section className="pt-[1.8rem] py-[4.8rem] md:pt-[6.6rem] md:py-[9.6rem] bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Título principal centrado */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[rgba(128,128,128,1)] mb-4">Contacto</h2>
+        </div>
+
+        <div className="max-w-6xl mx-auto">
+          {/* Tarjeta unificada de contacto */}
+          <div className="bg-white shadow-xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Sección izquierda - Información de contacto */}
+              <div className="bg-yellow-100 p-10">
+                <h3 className="text-3xl font-bold text-gray-800 mb-6">¿Necesita información?</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Si desea mayor información sobre nuestros productos y servicios, contáctenos o deje sus datos en el formulario de contacto.
+                </p>
+                
+                <div className="space-y-6">
+                  {/* Central Primax */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 text-xl mb-4">Dirección</h4>
+                    <div className="bg-yellow-400 rounded-full py-4 px-8 flex items-center justify-center gap-2 hover:bg-yellow-500 transition-colors cursor-pointer max-w-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C149.3 0 64 85.3 64 192c0 36.9 11 65.4 30.1 94.3l141.7 215c4.3 6.5 11.7 10.7 20.2 10.7s16-4.3 20.2-10.7l141.7-215C437 257.4 448 228.9 448 192C448 85.3 362.7 0 256 0m0 298.6c-58.9 0-106.7-47.8-106.7-106.8S197.1 85 256 85s106.7 47.8 106.7 106.8S314.9 298.6 256 298.6m0-170.6c-35.4 0-64 28.6-64 64s28.6 64 64 64s64-28.6 64-64s-28.6-64-64-64"/></svg>
+                      <span className="font-bold text-gray-900 text-lg">Av. Separadora Industrial</span>
+                    </div>
+                  </div>
+
+                  {/* WhatsApp */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 text-xl mb-4">Teléfono</h4>
+                    <div className="bg-yellow-400 rounded-full py-4 px-8 flex items-center justify-center gap-2 hover:bg-yellow-500 transition-colors cursor-pointer max-w-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+                      <span className="font-bold text-gray-900 text-lg">979 947 680</span>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <h4 className="font-bold text-gray-800 text-xl mb-4">Email</h4>
+                    <div className="bg-yellow-400 rounded-full py-4 px-8 flex items-center justify-center gap-2 hover:bg-yellow-500 transition-colors cursor-pointer max-w-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"/></svg>
+                      <span className="font-bold text-gray-900 text-lg">globallub@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sección derecha - Formulario */}
+              <div className="bg-white p-10 flex flex-col justify-center">
+                {/* Iframe oculto — recibe la respuesta del POST */}
+                <iframe
+                  name="hidden_iframe"
+                  ref={iframeRef}
+                  title="hidden_iframe"
+                  style={{ display: "none" }}
+                />
+
+                <form id="contactForm" action="https://formsubmit.co/4dffcdbde0cf37a401b689de21547795" method="POST" className="space-y-5">
+                  {/* Campos nombre y correo lado a lado */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <input 
+                        name="name" 
+                        type="text" 
+                        required 
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 focus:outline-none transition-all duration-200 text-gray-900" 
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div>
+                      <input 
+                        name="email" 
+                        type="email" 
+                        required 
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 focus:outline-none transition-all duration-200 text-gray-900" 
+                        placeholder="Correo electrónico"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Campo mensaje */}
+                  <div>
+                    <textarea 
+                      name="message" 
+                      rows="5" 
+                      required 
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 focus:outline-none transition-all duration-200 resize-none text-gray-900" 
+                      placeholder="Escribe tu mensaje aquí..."
+                    ></textarea>
+                  </div>
+
+                  {/* Campos ocultos */}
+                  <input type="text" name="_honey" style={{ display: "none" }} />
+
+                  {/* reCAPTCHA */}
+                  <div className="g-recaptcha" data-sitekey="6Ldn0u8rAAAAAGanxY0_SLG72Zvu7LYzRi7yLvcH"></div>
+
+                  {/* Botón de envío */}
+                  <button 
+                    type="submit" 
+                    id="submit-button" 
+                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 rounded-lg font-bold text-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 "
+                  >
+                    <span>Enviar</span>
+                    <span className="text-xl">→</span>
+                  </button>
+
+                  {/* Campos hidden de FormSubmit */}
+                  <input type="hidden" name="_next" value="https://global-lub.netlify.app/" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_subject" value="Nuevo Mensaje desde la Web Global Lub" />
+                  <input type="hidden" name="_template" value="box" />
+                </form>
+
+                <div id="form-status" className="text-gray-700 mt-3 text-center"></div>
+              </div>
             </div>
-          </div>
-
-          <div className="w-full lg:w-1/2 bg-[rgba(128,128,128,1)] p-10">
-            <h3 className="text-3xl font-bold text-white mb-4">Envíanos un mensaje</h3>
-
-            {/* Iframe oculto — recibe la respuesta del POST */}
-            <iframe
-              name="hidden_iframe"
-              ref={iframeRef}
-              title="hidden_iframe"
-              style={{ display: "none" }}
-            />
-
-            <form id="contactForm" action="https://formsubmit.co/4dffcdbde0cf37a401b689de21547795" method="POST" className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-white">Nombre</label>
-                <input name="name" type="text" required className="w-full mt-1 p-3 rounded-lg bg-white text-gray-900" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-white">Correo</label>
-                <input name="email" type="email" required className="w-full mt-1 p-3 rounded-lg bg-white text-gray-900" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-white">Mensaje</label>
-                <textarea name="message" rows="4" required className="w-full mt-1 p-3 rounded-lg bg-white text-gray-900"></textarea>
-              </div>
-
-              <input type="text" name="_honey" style={{ display: "none" }} />
-
-              <div className="g-recaptcha" data-sitekey="6Ldn0u8rAAAAAGanxY0_SLG72Zvu7LYzRi7yLvcH"></div>
-
-              <button type="submit" id="submit-button" className="w-full bg-[rgba(242,244,48)] hover:bg-yellow-400 text-gray-900 py-3 rounded-lg transition-all duration-200">
-                Enviar Mensaje
-              </button>
-
-              <input type="hidden" name="_next" value="https://global-lub.netlify.app/" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_subject" value="Nuevo Mensaje desde la Web Global Lub" />
-              <input type="hidden" name="_template" value="box" />
-            </form>
-
-            <div id="form-status" className="text-white mt-4"></div>
           </div>
         </div>
       </div>

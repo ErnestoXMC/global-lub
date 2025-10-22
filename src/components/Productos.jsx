@@ -4,7 +4,7 @@ import Producto from './childrens/Producto'
 const Productos = () => {
   return (
     <>
-      <section className="bg-white pb-[4.8rem] md:pb-[9.6rem]">
+      <section className="bg-white pb-[1.8rem] md:pb-[6.6rem]">
         <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
           <div className="mb-12 text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[rgba(128,128,128,1)] mb-2">
