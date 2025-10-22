@@ -42,27 +42,27 @@ const Header = () => {
             <header className='relative min-h-screen bg-cover bg-center bg-no-repeat header-font' style={{ backgroundImage: 'url(/background.webp)' }}>
                 <div className='absolute inset-0 bg-black/60'></div>
                 <div className='relative z-10'>
-                    <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6'>
-                        <nav className="relative z-50 flex justify-between items-center">
-                            <div className="flex items-center md:gap-x-12">
-                                <a aria-label="Home" href="#">
-                                    <img className="h-16 w-auto" src="/logo.jpg" alt="" />
+                    <div className='w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6'>
+                        <nav className="relative z-50 flex justify-between items-center max-w-screen-2xl mx-auto">
+                            <div className="flex items-center gap-x-10 lg:gap-x-12 xl:gap-x-16">
+                                <a aria-label="Home" href="#" className="flex-shrink-0">
+                                    <img className="h-12 md:h-14 lg:h-16 w-auto" src="/logo.jpg" alt="" />
                                 </a>
-                                <div className="hidden md:flex md:gap-x-6">
-                                    <a className="inline-block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-white transition-colors">Inicio</a>
-                                    <a className="inline-block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-white transition-colors">Quienes Somos</a>
-                                    <a className="inline-block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-white transition-colors">Productos</a>
-                                    <a className="inline-block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-white transition-colors">Servicios</a>
-                                    <a className="inline-block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-white/10 hover:text-white transition-colors">Contacto</a>
+                                <div className="hidden lg:flex items-center gap-x-6 xl:gap-x-8">
+                                    <a className="inline-block rounded-lg px-3 py-2 text-sm xl:text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-colors whitespace-nowrap">Inicio</a>
+                                    <a className="inline-block rounded-lg px-3 py-2 text-sm xl:text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-colors whitespace-nowrap">Quienes Somos</a>
+                                    <a className="inline-block rounded-lg px-3 py-2 text-sm xl:text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-colors whitespace-nowrap">Productos</a>
+                                    <a className="inline-block rounded-lg px-3 py-2 text-sm xl:text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-colors whitespace-nowrap">Servicios</a>
+                                    <a className="inline-block rounded-lg px-3 py-2 text-sm xl:text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-colors whitespace-nowrap">Contacto</a>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-x-5 md:gap-x-8">
+                            <div className="flex items-center gap-x-3 sm:gap-x-4 md:gap-x-6">
 
-                                <a className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 bg-yellow-500 text-slate-900 hover:bg-yellow-400 active:bg-yellow-600 focus-visible:outline-yellow-500 transition-colors" color="blue" variant="solid" href="#">
-                                   <span>Contactar<span className="hidden lg:inline"> por WhatsApp</span></span>
+                                <a className="hidden sm:inline-flex items-center justify-center rounded-full py-2 px-3 md:px-4 lg:px-5 text-xs sm:text-sm md:text-base lg:text-lg font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 bg-yellow-500 text-slate-900 hover:bg-yellow-400 active:bg-yellow-600 focus-visible:outline-yellow-500 transition-colors whitespace-nowrap" color="blue" variant="solid" href="#">
+                                   <span>Contactar<span className="hidden md:inline"> por WhatsApp</span></span>
                                 </a>
 
-                                <div className="-mr-1 md:hidden">
+                                <div className="-mr-1 lg:hidden">
                                     <div>
                                         <button onClick={() => setMenuMobile(!menuMobile)} className="relative z-10 flex h-8 w-8 items-center justify-center focus:not-data-focus:outline-hidden">
                                             <svg aria-hidden="true" className="h-3.5 w-3.5 overflow-visible stroke-white" fill="none" strokeWidth="2" strokeLinecap="round">
