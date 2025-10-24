@@ -11,7 +11,7 @@ const WhatsAppFloat = () => {
     >
       <img 
         src="/logo_whatsapp.svg" 
-        className="h-8 w-8 md:h-12 md:w-12" 
+        className="h-10 w-10 md:h-12 md:w-12" 
         alt="WhatsApp" 
       />
     </a>

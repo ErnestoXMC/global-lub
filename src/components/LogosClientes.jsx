@@ -8,7 +8,7 @@ const LogosClientes = () => {
   ];
 
   return (
-    <section className="py-12 px-4" style={{ backgroundColor: '#F6F7F8' }}>
+    <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Texto superior */}
         <div className="text-center mb-8">
